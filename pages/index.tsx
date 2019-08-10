@@ -6,6 +6,7 @@ const Home = () => (
   <Layout>
     <Head>
       <title>Leo Ji, software engineer and news nerd</title>
+      <meta property="og:url" content="https://leoji.dev/" />
     </Head>
     <h1 className="title">Leo Ji</h1>
     <h2 className="subtitle">software engineer, news nerd</h2>
