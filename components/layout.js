@@ -5,7 +5,7 @@ import Nav from './nav'
 import Footer from './footer'
 
 import 'reset-css'
-import '../styles/global.css'
+import '../styles/global.scss'
 
 export default class Layout extends React.Component {
   render() {
