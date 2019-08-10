@@ -5,6 +5,8 @@ $light-white: #f1f1f1;
 $brand: #6e3996;
 $dark-2: #222;
 $dark-4: #444;
+$meta: #666;
+$meta-link: #494949;
 
 h1,
 h2,
@@ -174,7 +176,7 @@ a {
     &:link,
     &:visited {
       display: inline-block;
-      border-top: solid 1px #898989;
+      border-top: solid 1px $meta;
       border-bottom-style: none;
       padding-top: 0.8em;
       padding-bottom: 2em;
@@ -182,7 +184,7 @@ a {
       margin-right: 0.7em;
       width: 8em;
       text-align: left;
-      color: #676767;
+      color: $meta-link;
       text-decoration: none;
     }
     &:hover,
@@ -195,7 +197,7 @@ a {
   small {
     display: block;
     font-size: 0.7em;
-    color: #898989;
+    color: $meta;
   }
 }
 
@@ -245,14 +247,14 @@ footer {
   padding-bottom: 6em;
   border-top: solid 1px #e0e0e0;
   font-size: 0.7em;
-  color: #acacac;
+  color: $meta;
   p {
     line-height: 1rem;
   }
   a {
     &:link,
     &:visited {
-      color: #787878;
+      color: $meta-link;
       border-bottom: solid 1px #9570b1;
     }
     &:hover,
