@@ -28,6 +28,9 @@ export default class Layout extends React.Component {
             property="og:image"
             content={serverRuntimeConfig.domain + '/static/bw_jakubiak.jpg'}
           />
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:site" content="@theleoji" />
+          <meta property="twitter:creator" content="@theleoji" />
         </Head>
         <Nav />
 
