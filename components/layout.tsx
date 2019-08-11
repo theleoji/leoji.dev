@@ -4,6 +4,9 @@ import Head from 'next/head'
 import Nav from './nav'
 import Footer from './footer'
 
+import getConfig from 'next/config'
+const { serverRuntimeConfig } = getConfig()
+
 import 'reset-css'
 import '../styles/global.scss'
 
@@ -21,7 +24,10 @@ export default class Layout extends React.Component {
           <meta name="description" content={metaTitle} />
           <meta property="og:title" content={metaTitle} />
           <meta property="og:type" content="website" />
-          <meta property="og:image" content="/static/bw_jakubiak.com" />
+          <meta
+            property="og:image"
+            content={serverRuntimeConfig.domain + '/static/bw_jakubiak.jpg'}
+          />
         </Head>
         <Nav />
 
