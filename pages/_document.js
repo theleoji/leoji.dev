@@ -4,6 +4,8 @@
 // ./pages/_document.js
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
+import { StyleReset } from 'atomize'
+
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx)
@@ -14,6 +16,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head />
+        <StyleReset />
         <body>
           <Main />
           <NextScript />
