@@ -1,5 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
+import { Button } from 'atomize'
 import Layout from '../components/layout'
 
 const Contact = () => (
@@ -26,6 +28,13 @@ const Contact = () => (
         phone and SMS: <a href="tel:+18723953654">(872) 395-3654</a>
       </li>
     </ul>
+
+    <h2>Need to talk more securely?</h2>
+    <p>
+      <Link href="/contact/secure">
+        <Button bg="black800">Learn more</Button>
+      </Link>
+    </p>
   </Layout>
 )
 
