@@ -4,14 +4,13 @@ import Link from 'next/link'
 import { Button } from 'atomize'
 import Layout from '../components/layout'
 
+import MetaUrl from '../components/metaUrl'
+
 const Contact = () => (
   <Layout>
     <Head>
       <title>Contact | Leo Ji</title>
-      <meta
-        property="og:url"
-        content="{serverRuntimeConfig.domain + '/contact'}"
-      />
+      <MetaUrl path="contact" />
     </Head>
     <h1 className="title">Contact Leo</h1>
     <h2 className="subtitle">say hello!</h2>
