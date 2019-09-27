@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Head from 'next/head'
 import Layout from '../../components/layout'
 import Link from 'next/link'
-import { Button, Icon } from 'atomize'
+import { Button } from 'atomize'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 
 function Contact() {
@@ -54,9 +54,9 @@ function Contact() {
         </Link>
       </p>
       <p>
-        <Button bg="info500" href="https://keybase.io/leoji">
-          Leo's keybase.io
-        </Button>
+        <a href="https://keybase.io/leoji">
+          <Button bg="info500">Leo's keybase.io</Button>
+        </a>
       </p>
     </Layout>
   )
