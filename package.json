@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
-    "start": "serve ./out"
+    "actual-build": "next build && next export",
+    "build": "yarn run actual-build && cp _redirects out/_redirects",
+    "serve": "serve ./out"
   },
   "dependencies": {
     "@callstack/react-theme-provider": "^3.0.3",

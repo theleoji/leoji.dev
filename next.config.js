@@ -8,7 +8,7 @@ module.exports = withPlugins([
     Sass,
     {
       serverRuntimeConfig: {
-        domain: 'https://leoji.dev'
+        domain: 'https://leoji.codes'
       }
     }
   ],
