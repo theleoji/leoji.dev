@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/leoji
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://leoji.codes
+  * I am leoji (https://keybase.io/leoji) on keybase.
+  * I have a public key with fingerprint 0F55 A90A C45F FCA9 8FC4  F0B3 D94D 635D A839 BE2C
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120467b31c914b29eafbe0e211116b27f1d729b0d09bcf60f76fda7ed98f18e29470a",
+      "fingerprint": "0f55a90ac45ffca98fc4f0b3d94d635da839be2c",
+      "host": "keybase.io",
+      "key_id": "d94d635da839be2c",
+      "kid": "01017794662588f3356d7078102c4a8c90bd9b119533c62c519c2f8c552e37c97ada0a",
+      "uid": "e10f68d8ee9587da2517568c5db6e319",
+      "username": "leoji"
+    },
+    "service": {
+      "hostname": "leoji.codes",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1569621605,
+  "expire_in": 157680000,
+  "prev": "b059aacf686e03aa67269add461960a0bba4985ca4ba68b341e3134910e81fea",
+  "seqno": 63,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owFtUmtMFFcUXmChsI3lVUHTaMtoqm1Q5j1zl9AUi1riklYqbWzWXe7M3IEBugP7
+AlzXENOoiGChRGxRq/KwhPijgJiWdFMeBig2KxGtVE1bCChaGhLA0kCgs6Qk/dHz
+5+ae833f/c6557N1IbrwoNEM8dDXwJcYNDQl6A5VHVc9mKBKpZjRg+Wj1QMVSMjh
+tOYrEmbEcILEaZYTKEIEBC2QAEFZQDgiCS1YgeRkQuJIIOASDgRRZnGZY2UJckgC
+vEzwiAQ0h0MsEZMVWw6yF9oVmzMgKzMMBDgUaUaWRahhRVrGBUoCtMRSjAR5CgiI
+FDViruoIMDRzAnSgnYqq5bSLddXe/+DXfOMExwGaZUmG52WKYliJwzmewEmRhrwI
+cEECAkEAhqJElhQZAoikzIsMQyKKEwEHJbjq27UqhwhcZnmJRwgwPCdBkiE4htXg
+ksAiigABoAPZbfATpKELkJqnYN5ETEu5FREFphpo47/lnaKqjVnjFdpVpyqqBVoh
+1+ksdBgDRGdpYQBZjATrvxpWQbFJ2gw1hhvZHYpqw4yEhhSdSkCUYFjAkgSLM4kY
+KilU7MiqBBAMx/K4FoF3kFuTFHAGQKj9FM9mIZyCkOVIFkBJolkCsDjEBQHSgGdE
+SAuQ5QWKJrQGKRoQOOIJGQVm4kBFNhUzspRmFOZoog4lxwadLjvCvIbyYEqvCwrX
+bYpL0EdmtRj6rEstZ/pm2tcWLzQ4sHU6Q0TUWuZUbpSuMv7nv2vq+k1hg2VR8P2S
+KyXTQ9nHayYKOpsWOidqEu6YLHl0jyfD8vq2oamFsvT3fkqL2HJ3xGaJ/pYbNjXH
+5IbU9u/ypPWe9XW1FttbUiZOm1NHdj2T37CGRZiHXr1m7X8WMceMJQx0P7lR3Vdx
+blqZAu5z39j9UszRcaVFV7vPHLvD0nnp6GT08LBBt3gYEua4uP1MU/NHs3kDre0j
+W5Orbwy3N3jPD56JGU08VRpqjD3/pmHDTcu6Bf/mExePucOX7m12GYbWly3PbDIJ
+lU3lhLrBt/H+97c2NtR9nhp1xKIvuB6HepOuqmG52z81NxdlP46sYSpPP/3jcprb
+eOzqxy9l8g0TCb0n6x/WLS+ZursvhJnfmu2qXnweRZX+9s6Ws8TYePVfFfMffHFz
+5MuVzPy52ND5BVf93Eqb9WRkUlvzu/5G5Hu+I/72YMmJKn+rL3muY/mBzdo2MbZP
+b45pjE574Zo3vb4R1qT7sZzmgy+HFx3JW1noKB54+6s7qT783lTK7J9TBtj76MmP
+yQ46+7Hfa5Iz4v3dv/8wfbsHzx6/2Ls3tOfui/tde/Y+8K93HDjQ7rvSnRKTv71z
++sPLrnbDpG9md/Ctg4/0Ib8sPvSUH+6o0md+d997qXar29Mwj1mWbU8vFL62u7XC
+9quVySriFpXR4Otx27KSal+pnGS7/gE=
+=kuaq
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/leoji
+
+==================================================================

@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "actual-build": "next build && next export",
-    "build": "yarn run actual-build && cp _redirects out/_redirects",
+    "build": "yarn run actual-build && cp -r ./root/ ./out/",
     "serve": "serve ./out"
   },
   "dependencies": {
