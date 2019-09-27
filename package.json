@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "actual-build": "next build && next export",
-    "build": "yarn run actual-build && cp -r ./root/* ./out",
+    "build-copy": "cd ./root/ && cp -rp . ../out",
+    "build": "yarn run actual-build && yarn run build-copy",
     "serve": "serve ./out"
   },
   "dependencies": {
