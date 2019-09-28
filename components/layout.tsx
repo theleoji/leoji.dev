@@ -7,7 +7,6 @@ import Footer from './footer'
 import getConfig from 'next/config'
 const { serverRuntimeConfig } = getConfig()
 
-import 'reset-css'
 import '../styles/global.scss'
 
 export default class Layout extends React.Component {
