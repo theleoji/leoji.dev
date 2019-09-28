@@ -6,7 +6,7 @@ import { Button } from 'atomize'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 
 function Contact() {
-  const [copied, setCopied] = useState()
+  const [isCopied, setIsCopied] = useState(false)
 
   return (
     <Layout>
@@ -34,12 +34,15 @@ function Contact() {
         Signal can also be configured to delete messages automatically after a
         designated time interval.
       </p>
-      <CopyToClipboard text="+1 (847) 262-7365" onCopy={() => setCopied(true)}>
+      <CopyToClipboard
+        text="+1 (847) 262-7365"
+        onCopy={() => setIsCopied(true)}
+      >
         <Button bg="info600">
           Leo's Signal phone number: +1&nbsp;(847)&nbsp;262-7365
         </Button>
       </CopyToClipboard>
-      {copied ? <span style={{ color: 'red' }}>Copied.</span> : null}
+      {isCopied ? <span style={{ color: 'red' }}>Copied.</span> : null}
 
       <h3>PGP</h3>
       <p>
