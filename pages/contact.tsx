@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { Button } from 'atomize'
 import Layout from '../components/layout'
 
+export const config = { amp: false }
+
 const Contact = () => (
   <Layout>
     <Head>

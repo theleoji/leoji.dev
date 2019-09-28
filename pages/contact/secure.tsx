@@ -5,7 +5,9 @@ import Link from 'next/link'
 import { Button } from 'atomize'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 
-function Contact() {
+export const config = { amp: false }
+
+const Contact = () => {
   const [isCopied, setIsCopied] = useState(false)
 
   return (

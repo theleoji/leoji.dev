@@ -1,17 +1,14 @@
-const withPlugins = require('next-compose-plugins')
-const Sass = require('@zeit/next-sass')
-const css = require('@zeit/next-css')
-const optimizedImages = require('next-optimized-images')
+const withSass = require('@zeit/next-sass')
+const withCss = require('@zeit/next-css')
+const withOptimizedImages = require('next-optimized-images')
 
-module.exports = withPlugins([
-  [
-    Sass,
-    {
+module.exports = withSass(
+  withCss(
+    withOptimizedImages({
       serverRuntimeConfig: {
         domain: 'https://leoji.codes'
-      }
-    }
-  ],
-  [css],
-  [optimizedImages]
-])
+      },
+      exportTrailingSlash: true
+    })
+  )
+)

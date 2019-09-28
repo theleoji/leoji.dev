@@ -2,6 +2,8 @@ import React from 'react'
 import Head from 'next/head'
 import Layout from '../components/layout'
 
+export const config = { amp: false }
+
 const Home = () => (
   <Layout>
     <Head>
