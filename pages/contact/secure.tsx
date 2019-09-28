@@ -36,7 +36,7 @@ function Contact() {
       </p>
       <CopyToClipboard text="+1 (847) 262-7365" onCopy={() => setCopied(true)}>
         <Button bg="info600">
-          Leo's Signal phone number: +1 (847) 262-7365
+          Leo's Signal phone number: +1&nbsp;(847)&nbsp;262-7365
         </Button>
       </CopyToClipboard>
       {copied ? <span style={{ color: 'red' }}>Copied.</span> : null}
