@@ -1,40 +1,24 @@
-import React from 'react'
-import Head from 'next/head'
+import React from "react";
 
-import Nav from './nav'
-import Footer from './footer'
+import { Container } from "@material-ui/core";
 
-import getConfig from 'next/config'
-const { serverRuntimeConfig } = getConfig()
+import Nav from "./nav";
+import Footer from "./footer";
 
-import '../styles/global.scss'
 export default class Layout extends React.Component {
-  props: { children: any }
+  props: { children: any };
   render() {
-    const { children } = this.props
-    const metaTitle = 'Leo Ji, software engineer and news nerd'
+    const { children } = this.props;
 
     return (
-      <div className="container">
-        <Head>
-          <meta charSet="utf-8" />
-          <meta name="description" content={metaTitle} />
-          <meta property="og:title" content={metaTitle} />
-          <meta property="og:type" content="website" />
-          <meta
-            property="og:image"
-            content={serverRuntimeConfig.domain + '/static/bw_jakubiak.jpg'}
-          />
-          <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:site" content="@theleoji" />
-          <meta property="twitter:creator" content="@theleoji" />
-        </Head>
+      <div className='container'>
         <Nav />
+        <Container>{children}</Container>
 
-        {children}
-
-        <Footer />
+        <Container>
+          <Footer />
+        </Container>
       </div>
-    )
+    );
   }
 }

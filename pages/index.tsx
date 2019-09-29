@@ -1,24 +1,25 @@
-import React from 'react'
-import Head from 'next/head'
-import Layout from '../components/layout'
+import React from "react";
+import Head from "next/head";
+import Layout from "../components/layout";
 
-export const config = { amp: false }
+import Box from "@material-ui/core/Box";
+import Typography from "@material-ui/core/Typography";
+
+export const config = { amp: false };
 
 const Home = () => (
   <Layout>
     <Head>
       <title>Leo Ji, software engineer and news nerd</title>
-      <meta property="og:url" content="{serverRuntimeConfig.domain + '/'}" />
+      <meta property='og:url' content="{serverRuntimeConfig.domain + '/'}" />
     </Head>
-    <h1 className="title">Leo Ji</h1>
-    <h2 className="subtitle">software engineer, news nerd</h2>
-    <p>I'm currently a software engineer at The Washington Post. </p>
-    <p>
-      I graduated in March 2019 from Northwestern University with a major in
-      journalism, a minor in computer science, and a certificate in
-      human-centered design.
-    </p>
+    <Box>
+      <Typography variant='overline'>
+        software engineer and news nerd
+      </Typography>
+      <Typography variant='h1'>Leo Ji</Typography>
+    </Box>
   </Layout>
-)
+);
 
-export default Home
+export default Home;
