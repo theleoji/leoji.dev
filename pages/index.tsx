@@ -18,6 +18,9 @@ const Home = () => (
         software engineer and news nerd
       </Typography>
       <Typography variant='h1'>Leo Ji</Typography>
+      <Typography variant='body1'>
+        Hi. I'm Leo. I'm currently a software engineer at The Washington Post.
+      </Typography>
     </Box>
   </Layout>
 );

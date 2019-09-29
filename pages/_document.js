@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import Document, { Head, Main, NextScript } from "next/document";
-import { ServerStyleSheets, ThemeProvider } from "@material-ui/styles";
+import { ServerStyleSheets } from "@material-ui/styles";
 import theme from "../styles/theme.tsx";
 
 import getConfig from "next/config";
@@ -39,9 +39,7 @@ class MyDocument extends Document {
           <meta property='twitter:creator' content='@theleoji' />
         </Head>
         <body>
-          <ThemeProvider theme={theme}>
-            <Main />
-          </ThemeProvider>
+          <Main />
           <NextScript />
         </body>
       </html>

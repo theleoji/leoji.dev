@@ -1,7 +1,7 @@
-import React from 'react'
+import { Box, Typography } from "@material-ui/core";
 
-export default class Footer extends React.Component {
-  render() {
-    return <footer>Built using next.js.</footer>
-  }
-}
+export default () => (
+  <Box component='footer' mt={5}>
+    <Typography variant='body2'>Built using next.js.</Typography>
+  </Box>
+);
