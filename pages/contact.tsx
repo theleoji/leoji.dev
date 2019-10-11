@@ -1,8 +1,13 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import { Button } from 'atomize'
 import Layout from '../components/layout'
+
+import Button from '@material-ui/core/Button'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+import ListItemText from '@material-ui/core/ListItemText'
+import Typography from '@material-ui/core/Typography'
 
 export const config = { amp: false }
 
@@ -11,32 +16,47 @@ const Contact = () => (
     <Head>
       <title>Contact | Leo Ji</title>
       <meta
-        property="og:url"
+        property='og:url'
         content="{serverRuntimeConfig.domain + '/contact'}"
       />
     </Head>
-    <h1 className="title">Contact Leo</h1>
-    <h2 className="subtitle">say hello!</h2>
 
-    <p>I'm usually online, and I'm most easily found at: </p>
-    <ul>
-      <li>
-        email: <a href="mailto:leo@leoji.dev">leo@leoji.dev</a>
-      </li>
-      <li>
-        Twitter: <a href="https://twitter.com/theleoji">@theleoji</a>
-      </li>
-      <li>
-        phone and SMS: <a href="tel:+18723953654">(872) 395-3654</a>
-      </li>
-    </ul>
+    <Typography variant='h1' className='title'>
+      Contact Leo
+    </Typography>
+    <Typography variant='h2' className='subtitle'>
+      say hello!
+    </Typography>
 
-    <h2>Need to talk more securely?</h2>
-    <p>
-      <Link href="/contact/secure">
-        <Button bg="black800">Learn more</Button>
+    <Typography paragraph>
+      I'm usually online, and I'm most easily found at:
+    </Typography>
+    <List>
+      <ListItem>
+        <ListItemText>
+          email: <a href='mailto:leo@leoji.dev'>leo@leoji.dev</a>
+        </ListItemText>
+      </ListItem>
+      <ListItem>
+        <ListItemText>
+          Twitter: <a href='https://twitter.com/theleoji'>@theleoji</a>
+        </ListItemText>
+      </ListItem>
+      <ListItem>
+        <ListItemText>
+          phone and SMS: <a href='tel:+18723953654'>(872) 395-3654</a>
+        </ListItemText>
+      </ListItem>
+    </List>
+
+    <Typography variant='h3'>Need to talk more securely?</Typography>
+    <Typography paragraph>
+      <Link href='/contact/secure/'>
+        <Button variant='contained' color='primary'>
+          Learn more
+        </Button>
       </Link>
-    </p>
+    </Typography>
   </Layout>
 )
 

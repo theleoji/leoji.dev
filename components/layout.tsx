@@ -1,24 +1,29 @@
-import React from "react";
+import React from 'react'
 
-import { Container } from "@material-ui/core";
+import { ThemeProvider } from '@material-ui/styles'
+import theme from '../styles/theme'
 
-import Nav from "./nav";
-import Footer from "./footer";
+import { Container } from '@material-ui/core'
+
+import Nav from './nav'
+import Footer from './footer'
+
+import '../styles/global.scss'
 
 export default class Layout extends React.Component {
-  props: { children: any };
+  props: { children: any }
   render() {
-    const { children } = this.props;
+    const { children } = this.props
 
     return (
-      <div className='container'>
+      <ThemeProvider theme={theme}>
         <Nav />
         <Container>{children}</Container>
 
         <Container>
           <Footer />
         </Container>
-      </div>
-    );
+      </ThemeProvider>
+    )
   }
 }

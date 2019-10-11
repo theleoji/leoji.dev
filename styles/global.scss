@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i&display=swap&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap&subset=latin-ext');
-
 $light-white: #f5f5f5;
 $brand: #6e3996;
 $dark-2: #222;
@@ -8,44 +5,27 @@ $dark-4: #444;
 $meta: #666;
 $meta-link: #494949;
 
+body {
+  font-size: "16px";
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-.subtitle {
-  font-family: 'DM Serif Display', Georgia, sans-serif;
-  font-weight: 400;
+p {
+  margin-top: "2rem";
+  margin-bottom: "1.5rem";
 }
 
-h1.title {
-  font-size: 5rem;
-  line-height: 5rem;
+p {
+  text-rendering: optimizeLegibility;
 }
 
 h2.subtitle {
-  font-weight: normal;
-  font-size: 1.75rem;
-  line-height: 2rem;
-}
-
-body {
-  font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 2;
-  min-height: 100vh;
-  text-rendering: optimizeLegibility;
-  strong {
-    font-weight: bold;
-  }
-}
-
-@media (min-width: 740px) {
-  body {
-    font-size: 18px;
-  }
+  margin-bottom: 1rem;
 }
 
 * {
@@ -57,210 +37,4 @@ body {
 ::selection {
   background-color: $dark-4;
   color: $light-white;
-}
-
-body {
-  text-align: center;
-  background-color: $light-white;
-  color: #555;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  max-width: 680px;
-  text-align: left;
-  img {
-    width: 100%;
-  }
-}
-
-@media (min-width: 740px) {
-  .container {
-    width: 750px;
-    img {
-      width: 750px;
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 900px;
-    img {
-      width: 900px;
-    }
-  }
-}
-
-h1,
-h2,
-h3 {
-  color: #000;
-  margin-top: 2em;
-  margin-bottom: 0.2em;
-  line-height: 1;
-}
-
-h1 {
-  font-size: 3em;
-  margin-top: 0.5em;
-  margin-bottom: 0.25em;
-  line-height: 1.25em;
-}
-
-@media (min-width: 740px) {
-  h1 {
-    font-size: 5em;
-  }
-}
-
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 6em;
-  }
-}
-
-p {
-  margin-top: 1em;
-  margin-bottom: 1.5em;
-  line-height: 1.85rem;
-  text-rendering: optimizeLegibility;
-  letter-spacing: -0.0075ch;
-}
-
-.subtitle {
-  font-size: 1.2em;
-  margin-top: 1.25em;
-  margin-bottom: 1.25rem;
-  color: $dark-2;
-  letter-spacing: 0.025ch;
-}
-
-ul,
-ol {
-  padding-left: 1em;
-  li::before {
-    display: inline-block;
-    content: '–';
-    width: 1em;
-    margin-left: -1em;
-  }
-}
-
-a {
-  &:link,
-  &:visited {
-    color: $dark-4;
-    text-decoration: none;
-    border-bottom: solid 1px #e0e0e0;
-  }
-  &:hover,
-  &:focus {
-    color: $dark-4;
-    border-bottom: solid 1px $dark-4;
-  }
-}
-
-.nav {
-  padding-top: 3em;
-  padding-left: 0;
-  li {
-    display: inline;
-    &::before {
-      display: none;
-    }
-  }
-  a {
-    &:link,
-    &:visited {
-      display: inline-block;
-      border-top: solid 1px $meta;
-      border-bottom-style: none;
-      padding-top: 0.8em;
-      padding-bottom: 2em;
-      margin-left: 0;
-      margin-right: 0.7em;
-      width: 8em;
-      text-align: left;
-      color: $meta-link;
-      text-decoration: none;
-    }
-    &:hover,
-    &:focus {
-      color: $dark-4;
-      border-top: solid 1px $brand;
-      border-bottom-style: none;
-    }
-  }
-  small {
-    display: block;
-    font-size: 0.7em;
-    color: $meta;
-  }
-}
-
-code {
-  font-size: 0.8em;
-  background-color: #d7ccdf;
-  color: $dark-4;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 6px;
-  padding-right: 6px;
-  white-space: nowrap;
-}
-
-.date {
-  font-size: 0.8em;
-  font-style: italic;
-}
-
-main {
-  margin-top: 4em;
-}
-
-pre {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 2em;
-  padding-right: 2em;
-  line-height: 1.2;
-  background-color: #e4dfe8;
-  border: solid 1px #cabad6;
-  overflow: auto;
-  code {
-    border-style: none;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-footer {
-  margin-top: 6em;
-  padding-top: 4em;
-  padding-bottom: 6em;
-  border-top: solid 1px #e0e0e0;
-  font-size: 0.7em;
-  color: $meta;
-  p {
-    line-height: 1rem;
-  }
-  a {
-    &:link,
-    &:visited {
-      color: $meta-link;
-      border-bottom: solid 1px #9570b1;
-    }
-    &:hover,
-    &:focus {
-      color: $brand;
-      border-bottom: solid 1px $dark-4;
-    }
-  }
 }

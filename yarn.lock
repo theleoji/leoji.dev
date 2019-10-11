@@ -1513,11 +1513,6 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-atomize@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/atomize/-/atomize-1.0.7.tgz#aed2c64b0015832f6af764994041296c8cbb59ba"
-  integrity sha512-vyu7GuVfp9akgAdbD2jd1MjfJpZvpgMYdeEZrRotNRtZBF+OvBKR/r8qw3/FxRxiSCbr4KxQ8I+Zz4YUsMiDzg==
-
 autodll-webpack-plugin@0.4.2:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/autodll-webpack-plugin/-/autodll-webpack-plugin-0.4.2.tgz#36e98fbaf30c235d1d5d076330464ac80901415c"

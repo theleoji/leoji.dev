@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from "react";
 import Link from "next/link";
-import { width } from "@material-ui/system";
+import { useRouter } from "next/router";
 
 import {
   Drawer,
@@ -10,7 +10,8 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText as MuiListItemText,
-  Box
+  Box,
+  MuiThemeProvider
 } from "@material-ui/core";
 import {
   Description as BlogIcon,
@@ -19,21 +20,19 @@ import {
   Menu as MenuIcon
 } from "@material-ui/icons";
 
-const ListItemLink = ({
-  children,
-  href,
-  target = null,
-  rel = null,
-  ...rest
-}) => (
-  <Link href={href}>
-    <MuiLink target={target} rel={rel}>
-      <ListItem button {...rest}>
-        {children}
-      </ListItem>
-    </MuiLink>
-  </Link>
-);
+const ListItemLink = ({ children, href, currentPath, ...rest }) => {
+  const selected = href === currentPath;
+
+  return (
+    <Link href={href}>
+      <MuiLink underline='none'>
+        <ListItem button selected={selected} {...rest}>
+          {children}
+        </ListItem>
+      </MuiLink>
+    </Link>
+  );
+};
 
 const ListItemText = ({ children, ...props }) => (
   <MuiListItemText primary={children} {...props} />
@@ -41,13 +40,14 @@ const ListItemText = ({ children, ...props }) => (
 
 export default () => {
   const [isDrawerOpen, setDrawerOpen] = useState();
-
+  const router = useRouter();
+  const currentPath = router.pathname;
   return (
     <Fragment>
       <Drawer open={isDrawerOpen} onClose={event => setDrawerOpen(false)}>
         <Box width='25vw'>
           <List component='nav' aria-label='main'>
-            <ListItemLink href='/'>
+            <ListItemLink href='/' currentPath={currentPath}>
               <ListItemIcon>
                 <HomeIcon />
               </ListItemIcon>
@@ -56,20 +56,23 @@ export default () => {
                 <small>where the ~ is</small>
               </ListItemText>
             </ListItemLink>
-            <ListItemLink
+            <MuiLink
               href='https://leoji.blog/'
               target='_blank'
               rel='noopener'
+              underline='none'
             >
-              <ListItemIcon>
-                <BlogIcon />
-              </ListItemIcon>
-              <ListItemText>
-                blog <br />
-                <small>where i say things</small>
-              </ListItemText>
-            </ListItemLink>
-            <ListItemLink href='/contact/'>
+              <ListItem button>
+                <ListItemIcon>
+                  <BlogIcon />
+                </ListItemIcon>
+                <ListItemText>
+                  blog <br />
+                  <small>where i say things</small>
+                </ListItemText>
+              </ListItem>
+            </MuiLink>
+            <ListItemLink href='/contact/' currentPath={currentPath}>
               <ListItemIcon>
                 <ContactIcon />
               </ListItemIcon>
