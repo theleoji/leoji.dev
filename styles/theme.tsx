@@ -35,21 +35,22 @@ let theme = createMuiTheme({
       letterSpacing: 0.25
     },
     h5: {
-      fontFamily: Font[1]
+      fontSize: '1.5rem'
     },
     h6: {
-      fontFamily: Font[1],
       letterSpacing: 0.25
     },
     body1: {
       fontFamily: Font[2],
       fontWeight: 300,
+      fontSize: '1rem',
       letterSpacing: 0.5,
       lineHeight: 1.75
     },
     body2: {
       fontFamily: Font[1],
       fontStyle: 'oblique',
+      fontSize: '1rem',
       fontWeight: 300,
       letterSpacing: 0.25
     },
@@ -65,6 +66,17 @@ let theme = createMuiTheme({
       root: {
         marginTop: '0.5rem',
         marginBottom: '1rem'
+      }
+    },
+    MuiCard: {
+      root: {
+        margin: '0.5rem'
+      }
+    },
+    MuiDivider: {
+      root: {
+        marginTop: '2rem',
+        marginBottom: '2rem'
       }
     }
   }
