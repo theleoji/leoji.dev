@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactGA from 'react-ga'
 
 import { ThemeProvider } from '@material-ui/styles'
 import theme from '../styles/theme'
@@ -9,6 +10,9 @@ import Nav from './nav'
 import Footer from './footer'
 
 import '../styles/global.scss'
+
+ReactGA.initialize('UA-69406642-5')
+ReactGA.pageview(window.location.pathname + window.location.search)
 
 export default class Layout extends React.Component {
   props: { children: any; noNav?: boolean }
