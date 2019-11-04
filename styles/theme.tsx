@@ -59,6 +59,12 @@ let theme = createMuiTheme({
       fontWeight: 'bold',
       fontStyle: 'oblique',
       letterSpacing: 2
+    },
+    button: {
+      fontFamily: Font[1],
+      textTransform: 'none',
+      fontSize: '1.15rem',
+      fontWeight: 300
     }
   },
   overrides: {
@@ -77,11 +83,6 @@ let theme = createMuiTheme({
       root: {
         marginTop: '2rem',
         marginBottom: '2rem'
-      }
-    },
-    MuiDrawer: {
-      root: {
-        fontFamily: Font[1]
       }
     }
   }

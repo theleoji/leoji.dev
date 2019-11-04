@@ -35,7 +35,11 @@ const ListItemLink = ({ children, href, currentPath, ...rest }) => {
 }
 
 const ListItemText = ({ children, ...props }) => (
-  <MuiListItemText primary={children} {...props} />
+  <MuiListItemText
+    primary={children}
+    primaryTypographyProps={{ variant: 'button' }}
+    {...props}
+  />
 )
 
 export default () => {
