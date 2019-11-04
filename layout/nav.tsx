@@ -16,7 +16,8 @@ import {
   Description as BlogIcon,
   ContactMail as ContactIcon,
   Home as HomeIcon,
-  Menu as MenuIcon
+  Menu as MenuIcon,
+  CameraAlt as CameraAltIcon
 } from '@material-ui/icons'
 
 const ListItemLink = ({ children, href, currentPath, ...rest }) => {
@@ -72,6 +73,22 @@ export default () => {
                 <ListItemText>
                   blog <br />
                   <small>where i say things</small>
+                </ListItemText>
+              </ListItem>
+            </MuiLink>
+            <MuiLink
+              href='https://photos.leoji.codes'
+              target='_blank'
+              rel='noopener'
+              underline='none'
+            >
+              <ListItem button>
+                <ListItemIcon>
+                  <CameraAltIcon />
+                </ListItemIcon>
+                <ListItemText>
+                  photos <br />
+                  <small>things that look pretty</small>
                 </ListItemText>
               </ListItem>
             </MuiLink>
