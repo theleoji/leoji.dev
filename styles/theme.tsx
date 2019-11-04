@@ -78,6 +78,11 @@ let theme = createMuiTheme({
         marginTop: '2rem',
         marginBottom: '2rem'
       }
+    },
+    MuiDrawer: {
+      root: {
+        fontFamily: Font[1]
+      }
     }
   }
 })
