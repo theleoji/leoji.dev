@@ -17,7 +17,9 @@ export default class Layout extends React.Component {
   props: { children: any; noNav?: boolean }
 
   componentDidMount() {
-    ReactGA.pageview(window.location.pathname + window.location.search)
+    if (typeof window !== 'undefined') {
+      ReactGA.pageview(window.location.pathname + window.location.search)
+    }
   }
   render() {
     const { children, noNav } = this.props
