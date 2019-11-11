@@ -12,9 +12,6 @@ import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
 import Typography from '@material-ui/core/Typography'
 import Image from 'material-ui-image'
-import Collapse from '@material-ui/core/Collapse'
-import Fade from '@material-ui/core/Fade'
-import Slide from '@material-ui/core/Slide'
 
 export const config = { amp: false }
 
