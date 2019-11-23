@@ -11,9 +11,7 @@ import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
 import Typography from '@material-ui/core/Typography'
-import Image from 'material-ui-image'
-
-export const config = { amp: false }
+import Image from 'react-image'
 
 const Contact = () => (
   <Layout>
@@ -33,7 +31,7 @@ const Contact = () => (
     </Typography>
 
     <Typography gutterBottom component='div'>
-      <Image src='/static/flags.jpg' aspectRatio={16 / 9} />
+      <Image src='/static/flags.jpg' width='100%' />
     </Typography>
 
     <Typography paragraph>

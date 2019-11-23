@@ -13,9 +13,7 @@ import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
 
-import Image from 'material-ui-image'
-
-export const config = { amp: false }
+import Image from 'react-image'
 
 const Home = () => (
   <Layout>
@@ -29,7 +27,7 @@ const Home = () => (
       </Typography>
       <Typography variant='h1'>Leo Ji</Typography>
       <Typography gutterBottom component='div'>
-        <Image src='/static/leoji.jpg' aspectRatio={4 / 3} />
+        <Image src='/static/leoji.jpg' width='100%' />
       </Typography>
       <Typography paragraph>
         Hi. I'm Leo. I'm currently a software engineer at The Washington Post.
