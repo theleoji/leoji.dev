@@ -252,6 +252,9 @@ h6 {
 h1.site-title {
   font-size: 3.6rem;
 
+  @media screen and (min-width: 767px) {
+    font-size: 8.2rem;
+  }
 }
 
 h2.subtitle {
