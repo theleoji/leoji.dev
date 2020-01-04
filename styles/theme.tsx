@@ -3,9 +3,10 @@ import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles'
 const Font = [
   ['DM Serif Display', 'serif'],
   ['Futura PT', 'sans-serif'],
-  ['Merriweather', 'Georgia', 'Times New Roman', 'serif']
+  ['Merriweather', 'serif']
 ].map(value => value.join(', '))
 
+// Init
 let theme = createMuiTheme({
   palette: {
     primary: {
@@ -16,43 +17,37 @@ let theme = createMuiTheme({
     }
   },
   typography: {
-    fontSize: 16,
+    htmlFontSize: 13,
+    fontSize: 13,
     fontFamily: Font[0],
-    h1: {
-      letterSpacing: -1.5,
-      lineHeight: 1.25
-    },
+    h1: { fontSize: 2.2, lineHeight: 1.15 },
     h2: {
-      letterSpacing: 0.5,
-      lineHeight: 1.25,
-      fontSize: '3rem'
+      lineHeight: 1.35,
+      fontSize: 1.5
     },
     h3: {
-      fontSize: '2rem',
-      lineHeight: 1.5
+      fontSize: 1.9,
+      lineHeight: 1.4
     },
     h4: {
-      letterSpacing: 0.25
+      fontSize: 1.7,
+      lineHeight: 1.4
     },
     h5: {
-      fontSize: '1.5rem'
+      fontSize: 1.6
     },
     h6: {
-      letterSpacing: 0.25
+      fontSize: 1.5
     },
     body1: {
       fontFamily: Font[2],
-      fontWeight: 300,
-      fontSize: '1rem',
-      letterSpacing: 0.5,
-      lineHeight: 1.75
+      lineHeight: 1.6,
+      fontSize: 1.5
     },
     body2: {
       fontFamily: Font[1],
       fontStyle: 'oblique',
-      fontSize: '1rem',
-      fontWeight: 300,
-      letterSpacing: 0.25
+      fontSize: 1.1
     },
     overline: {
       fontFamily: Font[1],
@@ -63,10 +58,11 @@ let theme = createMuiTheme({
     button: {
       fontFamily: Font[1],
       textTransform: 'none',
-      fontSize: '1.15rem',
+      fontSize: 1.15,
       fontWeight: 300
     }
   },
+  spacing: factor => `${factor}rem`,
   overrides: {
     MuiButton: {
       root: {
@@ -84,9 +80,29 @@ let theme = createMuiTheme({
         marginTop: '2rem',
         marginBottom: '2rem'
       }
+    },
+    MuiTypography: {
+      paragraph: {
+        marginBottom: '2rem'
+      }
+    },
+    MuiContainer: {
+      root: {
+        padding: '0 10px',
+        paddingLeft: null,
+        paddingRight: null
+      }
     }
   }
 })
+
+// Dynamics post-init
+
+theme.typography.body1 = Object.assign(
+  {},
+  { [theme.breakpoints.up('lg')]: { fontSize: '1.5rem' } },
+  theme.typography.body1
+)
 
 theme = responsiveFontSizes(theme)
 

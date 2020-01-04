@@ -22,7 +22,7 @@ class MyDocument extends Document {
           {/* PWA primary color */}
           <meta name='theme-color' content={theme.palette.primary.main} />
           <link
-            href='https://fonts.googleapis.com/css?family=DM+Serif+Display|Merriweather:300,700&display=swap'
+            href='https://fonts.googleapis.com/css?family=DM+Serif+Display|Merriweather:400,700&display=swap'
             rel='stylesheet'
           />
           <link rel='stylesheet' href='https://use.typekit.net/vsr0fdb.css' />

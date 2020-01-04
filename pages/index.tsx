@@ -25,7 +25,9 @@ const Home = () => (
       <Typography variant='overline'>
         software engineer and news nerd
       </Typography>
-      <Typography variant='h1'>Leo Ji</Typography>
+      <Typography variant='h1' className='site-title'>
+        Leo Ji
+      </Typography>
       <Typography gutterBottom component='div'>
         <Image src='/static/leoji.jpg' width='100%' />
       </Typography>

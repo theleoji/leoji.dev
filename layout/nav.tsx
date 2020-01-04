@@ -53,7 +53,7 @@ export default () => {
         onOpen={event => setDrawerOpen(true)}
         onClose={event => setDrawerOpen(false)}
       >
-        <Box width='25vw' minWidth='400px'>
+        <Box className='navDrawer'>
           <List component='nav' aria-label='main'>
             <ListItemLink href='/' currentPath={currentPath}>
               <ListItemIcon>
