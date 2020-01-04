@@ -31,7 +31,7 @@ const Contact = () => (
     </Typography>
 
     <Typography gutterBottom component='div'>
-      <Image src='/static/flags.jpg' width='100%' />
+      <Image src='/static/flags.jpg?nf_resize=fit&w=861' width='100%' />
     </Typography>
 
     <Typography paragraph>

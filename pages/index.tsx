@@ -29,7 +29,7 @@ const Home = () => (
         Leo Ji
       </Typography>
       <Typography gutterBottom component='div'>
-        <Image src='/static/leoji.jpg' width='100%' />
+        <Image src='/static/leoji.jpg?nf_resize=fit&w=861' width='100%' />
       </Typography>
       <Typography paragraph>
         Hi. I'm Leo. I'm currently a software engineer at The Washington Post.
