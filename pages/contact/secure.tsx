@@ -47,12 +47,12 @@ const Contact = () => {
         designated time interval.
       </Typography>
       <CopyToClipboard
-        text='+1 (847) 262-7365'
+        text='+1 (202) 909-1200'
         onCopy={() => setIsCopied(true)}
       >
         <Button variant='outlined' color='primary'>
           {!isCopied
-            ? `Copy Signal number: +1${nbsp}(847)${nbsp}262-7365`
+            ? `Copy Signal number: +1${nbsp}(202)${nbsp}909-1200`
             : `Copied`}
         </Button>
       </CopyToClipboard>

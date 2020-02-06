@@ -50,7 +50,7 @@ const Contact = () => (
       </ListItem>
       <ListItem>
         <ListItemText>
-          phone and SMS: <a href='tel:+18723953654'>(872) 395-3654</a>
+          phone: <a href='tel:+12029091200'>(202) 909-1200</a>
         </ListItemText>
       </ListItem>
     </List>
